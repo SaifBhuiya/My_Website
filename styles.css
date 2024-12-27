@@ -5,11 +5,18 @@
     font-family: 'Arial', sans-serif;
 }
 
+/* Create a wrapper to ensure footer stays at bottom */
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
-    background-color: #5A3D55; /*header BG color*/
+    background-color: #F9B9B9;
     height: 5vh;
     width: 100%;
-    color: #170429; /*header Font colro*/
+    color: #312B21;
     font-size: 20px;
     margin: 0;
     padding: 40px;
@@ -18,8 +25,9 @@ header {
     align-items: center;
     position: relative;
 }
+
     header nav a {
-        color: #170429; /*header Clickable colors*/
+        color: #312B21;
         text-decoration: none;
         font-size: 15px;
         padding: 30px;
@@ -30,25 +38,90 @@ header {
         }
 
 body {
-    height: 110vh;
-    background: linear-gradient(to bottom, #FF7070,#965F8A,#4AC6B7);
-    /*background-color: #FCFFFD;*/ /*Body BGM*/
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(255, 112, 112, 0.3), rgba(150, 95, 138, 0.4), rgba(74, 198, 183, 0.3) );
 }
-       body h2 {
-        font-size: 32px; /* Set the font size of h1 within the body */
+
+   
+    body h3{
+        font-size: 37px;
     }
-main {
-    color: #170429; /* body font color*/
-    font-size: 30px;
-    /* padding: 20px;*/
-    margin: 100px;
+
+   
+.animated-text {
+    font-size: 32px;
+
 }
+
+    .animated-text span {
+        position: relative;
+        font-size: 35px;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+        .animated-text span::before {
+            content: "Software Engineer";
+            color: #E9805D;
+            animation: words 20s infinite;
+        }
+
+        .animated-text span::after {
+            content: "";
+            position: absolute;
+            width: calc(100% + 8px);
+            height: 100%;
+            right: -8px;
+            animation: cursor .8s infinite, typing 20s steps(14) infinite;
+        }
+
+
+
+
+
+@keyframes words {
+    0%, 20% {
+        content: "Software Engineer";
+        color: #754FFF;
+    }
+    21%, 40% {
+        content: "Game Developer";
+        color: #4F8DFF;
+    }
+
+    41%, 60% {
+        content: "Music Producer";
+        color: #25A18E;
+    }
+
+    61%, 80% {
+        content: "Graphics Designer";
+        color: #FF7F50; /* Soft orange for harmony */
+    }
+
+    81%, 100% {
+        content: "Teacher";
+        color: #C74FFF; /* Gentle pink for coherence */
+    }
+}
+
+
+main {
+    color: #312B21;
+    font-size: 30px;
+    margin: 100px;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    flex: 1; /* This makes main content take up remaining space */
+}
+
 footer {
-    position: fixed;
-    bottom: 0;
+    /* Remove position: fixed */
     width: 100%;
-    background-color: #333;
-    color: white;
+    background-color: #B1DBE7;
+    color: #312B21;
     text-align: center;
     padding: 10px;
+    margin-top: auto; /* Pushes footer to bottom */
 }

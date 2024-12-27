@@ -10,51 +10,93 @@
     <link rel="stylesheet" href="styles_music.css">
 </head>
 <body>
-    <header>
-        <h1>
-            MixedApe
-        </h1>
-        <nav>
-            <a href="index.html">About Me</a>
-            <a href="projects.html">Projects</a>
-            <a href="games.html">Games</a>
-            <a href="music.html">Music</a>
-        </nav>
+    <div class="page-wrapper">
+        <header>
+            <h1>
+                MixedApe
+            </h1>
+            <nav>
+                <a href="index.html">About Me</a>
+                <a href="projects.html">Projects</a>
+                <a href="games.html">Games</a>
+                <a href="music.html">Music</a>
+            </nav>
 
-    </header>
-    <main>
-        <section>
-            <h2>Hello! I am MixedApe. </h2>
+        </header>
+        <main>
+
+
+            <section>
+                <h2>Hello! I am MixedApe. </h2>
+                <p>
+                    I am a music producer from Bangladesh. I make EDM music.
+                </p>
+
+
+                <!--MUSIC BUTTONS START  -->
+                <div class="button-container">
+                    <button class="toggle-button active" onclick="toggleSongs('originals')">Originals</button>
+                    <button class="toggle-button" onclick="toggleSongs('remixes')">Remixes</button>
+                </div>
+
+                <div id="originals" class="song-list active">
+                    <div class="song">
+                        <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                                src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/1975141611&amp;color=%23246B67">
+                        </iframe>
+                    </div>
+                    <div class="song">
+                        <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                                src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/899785738&amp;color=%23797ca9">
+                        </iframe>
+                    </div>
+                    <div class="song">
+                        <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                                src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/908545624&amp;color=%23a4747c">
+                        </iframe>
+                    </div>
+
+                </div>
+
+                <div id="remixes" class="song-list">
+                    <div class="song">
+                        <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                                src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/1702643478&amp;color=%232d3053">
+                        </iframe>
+                    </div>
+                    <div class="song">
+                        <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                                src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/999732685&amp;color=%23618185">
+                        </iframe>
+                    </div>
+                    <div class="song">
+                        <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                                src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/1184367820&amp;color=%23285c7c">
+                        </iframe>
+                    </div>
+
+                </div>
+                <!-- MUSIC BUTTONS END -->
+
+
+            </section>
+        </main>
+        <footer>
+            <p>© 2024 Saif Bhuiya. All rights reserved.</p>
             <p>
-                I am a music producer from Bangladesh. I make EDM music.
+                <a href="index.html">About</a> |
+                <a href="index.html">Contact</a> |
+                <a href="index.html">Privacy Policy</a>
             </p>
             <p>
-                <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
-                        src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/1975141611&amp;color=%23246b67">
-                </iframe>
-                <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
-                        src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/1702643478&amp;color=%2340A578">
-                </iframe>
-                
+                Follow me on:
 
+                <a href="https://github.com/SaifBhuiya" target="_blank">GitHub</a> |
+                <a href="https://itch.io/profile/dan5626" target="_blank">Itch.io</a> |
+                <a href="https://soundcloud.com/user-11502799-336281830" target="_blank">Soundcloud</a>
             </p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 Saif Bhuiya. All rights reserved.</p>
-        <p>
-            <a href="index.html">About</a> |
-            <a href="contact.html">Contact</a> |
-            <a href="privacy.html">Privacy Policy</a>
-        </p>
-        <p>
-            Follow me on:
-
-            <a href="https://github.com/SaifBhuiya" target="_blank">GitHub</a> |
-            <a href="https://itch.io/profile/dan5626" target="_blank">Itch.io</a> |
-            <a href="https://soundcloud.com/user-11502799-336281830" target="_blank">Soundcloud</a>
-        </p>
-    </footer>
-
+        </footer>
+    </div>
+    <script src="script_music.js"></script>
 </body>
 </html>

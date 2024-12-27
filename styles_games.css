@@ -5,11 +5,17 @@
     font-family: 'Arial', sans-serif;
 }
 
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
-    background-color: #A04050; /*header BG color*/
+    background-color: #7D89E3;
     height: 5vh;
     width: 100%;
-    color: #302121; /*header Font colro*/
+    color: #342131;
     font-size: 20px;
     margin: 0;
     padding: 40px;
@@ -18,8 +24,9 @@ header {
     align-items: center;
     position: relative;
 }
+
     header nav a {
-        color: #302121; /*header Clickable colors*/
+        color: #342131;
         text-decoration: none;
         font-size: 15px;
         padding: 30px;
@@ -30,24 +37,30 @@ header {
         }
 
 body {
-    height: 110vh;
-    background: linear-gradient(to bottom, #f55c7a, #f6bc66,#FFEEB3);
+    height: auto; /* Removed fixed height to allow natural content growth */
+    background: linear-gradient( to bottom, rgba(92, 102, 245, 0.5),
+    rgba(100, 198, 247, 0.4),
+    rgba(250, 179,255, 0.3) );
 }
-       body h2 {
-        font-size: 32px; /* Set the font size of h1 within the body */
+
+    body h2 {
+        font-size: 32px;
     }
+
 main {
-    color: #302121; /* body font color*/
+    color: #342131;
     font-size: 30px;
-    /* padding: 20px;*/
     margin: 100px;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    flex: 1; /* Makes the main content area grow to fill available space */
 }
+
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
-    background-color: #333;
-    color: white;
+    background-color: #E4E1F5; /* Matching header background color */
+    color: #342131; /* Matching header text color */
     text-align: center;
     padding: 10px;
+    margin-top: auto; /* Pushes the footer to the bottom if content is short */
 }
