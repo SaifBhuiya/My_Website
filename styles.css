@@ -13,7 +13,7 @@
 }
 
 header {
-    background-color: #F9B9B9;
+    background-color: /*#F9B9B9*/;
     height: 5vh;
     width: 100%;
     color: #312B21;
@@ -30,16 +30,19 @@ header {
         color: #312B21;
         text-decoration: none;
         font-size: 15px;
-        padding: 30px;
+        padding: 15px 30px;
+        border-radius: 20px;
     }
 
         header nav a:hover {
-            text-decoration: underline;
+            /*text-decoration: underline;*/
+            background-color: rgba(255, 112, 112, .5);
+            color: white;
         }
 
 body {
     min-height: 100vh;
-    background: linear-gradient(to bottom, rgba(255, 112, 112, 0.3), rgba(150, 95, 138, 0.4), rgba(74, 198, 183, 0.3) );
+    background: linear-gradient(to bottom, rgba(255, 112, 112, 0.4), rgba(150, 95, 138, 0.4), rgba(74, 198, 183, 0.3) );
 }
 
    
@@ -57,7 +60,7 @@ body {
         position: relative;
         font-size: 35px;
         font-weight: bold;
-        text-decoration: underline;
+        /*text-decoration: underline;*/
         text-decoration-thickness: 3px;
     }
 
@@ -83,26 +86,26 @@ body {
 @keyframes words {
     0%, 20% {
         content: "Software Engineer";
-        color: #754FFF;
+        color: rgba(255, 112, 112, 1);
     }
     21%, 40% {
         content: "Game Developer";
-        color: #4F8DFF;
+        color: rgba(255, 112, 112, 1);
     }
 
     41%, 60% {
         content: "Music Producer";
-        color: #25A18E;
+        color: rgba(255, 112, 112, 1);
     }
 
     61%, 80% {
         content: "Graphics Designer";
-        color: #FF7F50; /* Soft orange for harmony */
+        color: rgba(255, 112, 112, 1); /* Soft orange for harmony */
     }
 
     81%, 100% {
         content: "Teacher";
-        color: #C74FFF; /* Gentle pink for coherence */
+        color: rgba(255, 112, 112, 1); /* Gentle pink for coherence */
     }
 }
 
@@ -119,7 +122,7 @@ main {
 footer {
     /* Remove position: fixed */
     width: 100%;
-    background-color: #B1DBE7;
+    background-color: /*#B1DBE7*/;
     color: #312B21;
     text-align: center;
     padding: 10px;

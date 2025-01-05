@@ -24,4 +24,7 @@ function toggleSongs(type) {
     } else {
         console.error(`No list found with ID: ${type}`);
     }
+
+
 }
+

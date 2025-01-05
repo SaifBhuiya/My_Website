@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #audioPlayer {
+            width: 300px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="audioPlayer">
+        <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/1975141611&amp;color=%23246B67">
+        </iframe>
+    </div>
+
+    <script>
+        const audio = document.getElementById('player');
+
+        // Listen for messages from parent pages
+        window.addEventListener('message', function (event) {
+            switch (event.data.command) {
+                case 'play':
+                    audio.play();
+                    break;
+                case 'pause':
+                    audio.pause();
+                    break;
+                case 'setVolume':
+                    audio.volume = event.data.value;
+                    break;
+                case 'setTrack':
+                    audio.src = event.data.track;
+                    audio.play();
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>
