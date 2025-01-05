@@ -7,52 +7,207 @@
     <title>
         Saif's Portfolio - About Me
     </title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_global.css">
+    <!-- Dynamic stylesheet - will be changed based on page -->
+    <link id="dynamic-stylesheet" rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <div class="page-wrapper">
-        <header>
-            <h1>
-                Portfolio
-            </h1>
-            <nav>
-                <a href="index.html">About Me</a>
-                <a href="projects.html">Projects</a>
-                <a href="games.html">Games</a>
-                <a href="music.html">Music</a>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h3>About Me</h3>
-                <p1>I am Saif Bhuiya. </p1>
-                <p2>
+
+        <div id="about" class="page">
+            <header>
+                <h1>
+                    Portfolio
+                </h1>
+                <nav>
+                    <a href="#" data-page="about">About Me</a>
+                    <a href="#" data-page="projects">Projects</a>
+                    <a href="#" data-page="games">Games</a>
+                    <a href="#" data-page="music">Music</a>
+                    <!--<a href="/index.html">About Me</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/games.html">Games</a>
+        <a href="/music.html">Music</a>-->
+                </nav>
+            </header>
+            <main>
+                <section>
+                    <h3>About Me</h3>
+                    <p1>I am Saif Bhuiya. </p1>
+                    <p2>
 
 
-                    <div1 class="animated-text">
-                        I am a <span></span>
-                    </div1>
-                </p2>   
+                        <div1 class="animated-text">
+                            I am a <span></span>
+                        </div1>
+                    </p2>
+
+                </section>
+            </main>
+        </div>
+
+        <div id="projects" class="page">
+            <header>
+               
+                <h1>
+                    Saif Bhuiya
+                </h1>
+                <nav>
+                    <a href="#" data-page="about">About Me</a>
+                    <a href="#" data-page="projects">Projects</a>
+                    <a href="#" data-page="games">Games</a>
+                    <a href="#" data-page="music">Music</a>
+                </nav>
+            </header>
+            <main>
+                <section>
+                    <h2>Hello! I am Saif Bhuiya. </h2>
+                    <p>I am a Software Engineer from Bangladesh. <br>I did my Bachelors in Computer Science and Engineering from North South University, Bangladesh. <br>My current CGPA: 3.74.<br> My Projects:</p>
+                    <p1>
+                        <br> <a href="https://github.com/SaifBhuiya/CSE299">Optical Mark Recognition (OMR) from pictures taken by a phone</a>
+                        <br> <a href="https://github.com/SaifBhuiya/Mediapipe">Augmented Reality based Clothing Trial App</a>
+                        <br> <a href="index.html">This Website</a>
+                    </p1>
+                </section>
+            </main>
+        </div>
+
+
+
+        <div id="games" class="page">
+            <header>
                 
-            </section>
-        </main>
-        <footer>
-            <p>© 2024 Saif Bhuiya. All rights reserved.</p>
-            <p>
-                <a href="index.html">About</a> |
-                <a href="contact.html">Contact</a> |
-                <a href="privacy.html">Privacy Policy</a>
-            </p>
-            <p>
-                Follow me on:
+                <h1>
+                    Dan5626
+                </h1>
+                <nav>
+                    <a href="#" data-page="about">About Me</a>
+                    <a href="#" data-page="projects">Projects</a>
+                    <a href="#" data-page="games">Games</a>
+                    <a href="#" data-page="music">Music</a>
+                </nav>
 
-                <a href="https://github.com/SaifBhuiya" target="_blank">GitHub</a> |
-                <a href="https://itch.io/profile/dan5626" target="_blank">Itch.io</a> |
-                <a href="https://soundcloud.com/user-11502799-336281830" target="_blank">Soundcloud</a>
-            </p>
-        </footer>
+            </header>
+            <main>
+                <section>
+                    <h2>Hello! I am Dan5626. </h2>
+                    <p>I am a Game Developer from Bangladesh.</p>
+                </section>
+                <section1>
+                    <iframe frameborder="1" src="https://itch.io/embed/2909337?linkback=true&amp;
+            border_width=5&amp;bg_color=000000&amp;fg_color=ff8711&amp;link_color=8200c4&amp;border_color=b034ff" width="560" height="175">
+                        <a href="https://batmenzdw.itch.io/space-forge">Space Forge by BatmenzDW, Vinny Games (Pugtooth), Dan5626</a>
+                    </iframe>
+                    <iframe frameborder="1" src="https://itch.io/embed/3044550?linkback=true&amp;
+            border_width=5&amp;bg_color=f5e5c2&amp;fg_color=d87645&amp;link_color=7469ad&amp;border_color=a463ab"
+                            width="560" height="175">
+                        <a href="https://dan5626.itch.io/young-king">The Young King by Dan5626</a>
+                    </iframe>
+                    <iframe frameborder="1" src="https://itch.io/embed/2973622?border_width=5&amp;bg_color=46a682&amp;fg_color=1b2a67&amp;link_color=1b2a67&amp;border_color=172924"
+                            width="560" height="175">
+                        <a href="https://dan5626.itch.io/that-stormy-night">That Stormy Night by Dan5626, NickusD</a>
+                    </iframe>
+                </section1>
+
+            </main>
+        </div>
 
 
-    </div>
+        <div id="music" class="page">
+
+            <header>
+                <h1>
+                    MixedApe
+                </h1>
+                <nav>
+                    <a href="#" data-page="about">About Me</a>
+                    <a href="#" data-page="projects">Projects</a>
+                    <a href="#" data-page="games">Games</a>
+                    <a href="#" data-page="music">Music</a>
+                </nav>
+
+            </header>
+            <main>
+
+
+                <section>
+                    <h2>Hello! I am MixedApe. </h2>
+                    <p>
+                        I am a music producer from Bangladesh. I make EDM music.
+                    </p>
+
+
+                    <!--MUSIC BUTTONS START  -->
+                    <div class="button-container">
+                        <button class="toggle-button active" onclick="toggleSongs('originals')">Originals</button>
+                        <button class="toggle-button" onclick="toggleSongs('remixes')">Remixes</button>
+                    </div>
+
+                    <div id="originals" class="song-list active">
+                        <div class="song">
+                            <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                                    src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/1975141611&amp;color=%23246B67">
+                            </iframe>
+                        </div>
+                        <div class="song">
+                            <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                                    src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/899785738&amp;color=%23797ca9">
+                            </iframe>
+                        </div>
+                        <div class="song">
+                            <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                                    src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/908545624&amp;color=%23a4747c">
+                            </iframe>
+                        </div>
+
+                    </div>
+
+                    <div id="remixes" class="song-list">
+                        <div class="song">
+                            <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                                    src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/1702643478&amp;color=%232d3053">
+                            </iframe>
+                        </div>
+                        <div class="song">
+                            <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                                    src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/999732685&amp;color=%23618185">
+                            </iframe>
+                        </div>
+                        <div class="song">
+                            <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                                    src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/1184367820&amp;color=%23285c7c">
+                            </iframe>
+                        </div>
+
+                    </div>
+                    <!-- MUSIC BUTTONS END -->
+
+
+                </section>
+            </main>
+
+            </div>
+
+            <footer>
+                <p>© 2024 Saif Bhuiya. All rights reserved.</p>
+                <p>
+                    <a href="index.html">About</a> |
+                    <a href="contact.html">Contact</a> |
+                    <a href="privacy.html">Privacy Policy</a>
+                </p>
+                <p>
+                    Follow me on:
+
+                    <a href="https://github.com/SaifBhuiya" target="_blank">GitHub</a> |
+                    <a href="https://itch.io/profile/dan5626" target="_blank">Itch.io</a> |
+                    <a href="https://soundcloud.com/user-11502799-336281830" target="_blank">Soundcloud</a>
+                </p>
+            </footer>
+
+
+        </div>
+        <script src="script_global.js"></script>
+
 </body>
 </html>
