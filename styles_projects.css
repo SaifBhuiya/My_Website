@@ -12,7 +12,7 @@
 }
 
 header {
-    background-color: #A67DE3; /*header BG color*/
+    background-color: /*#A67DE3*/; /*header BG color*/
     height: 5vh;
     width: 100%;
     color: #302131; /*header Font colro*/
@@ -29,11 +29,18 @@ header {
         color: #302131; /*header Clickable colors*/
         text-decoration: none;
         font-size: 15px;
-        padding: 30px;
+        padding: 15px 30px;
+        border-radius: 20px;
     }
 
         header nav a:hover {
-            text-decoration: underline;
+            /*text-decoration: underline;*/
+            background-color: rgba(137, 103, 179, 0.5);
+            color: white;
+        }
+        header nav a.current {
+            background-color: rgba(137, 103, 179, .9);
+            color: white;
         }
 
 body {

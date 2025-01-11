@@ -8,6 +8,7 @@
         Saif's Portfolio - About Me
     </title>
     <link rel="stylesheet" href="styles_global.css">
+    <link rel="stylesheet" href="miniplayer.css">
     <!-- Dynamic stylesheet - will be changed based on page -->
     <link id="dynamic-stylesheet" rel="stylesheet" href="styles.css">
 
@@ -15,20 +16,21 @@
 <body>
     <div class="page-wrapper">
 
+
         <div id="about" class="page">
             <header>
                 <h1>
                     Portfolio
                 </h1>
                 <nav>
-                    <a href="#" data-page="about">About Me</a>
+                    <a href="#" data-page="about" class="current">About Me</a>
                     <a href="#" data-page="projects">Projects</a>
                     <a href="#" data-page="games">Games</a>
                     <a href="#" data-page="music">Music</a>
                     <!--<a href="/index.html">About Me</a>
-        <a href="/projects.html">Projects</a>
-        <a href="/games.html">Games</a>
-        <a href="/music.html">Music</a>-->
+                    <a href="/projects.html">Projects</a>
+                    <a href="/games.html">Games</a>
+                    <a href="/music.html">Music</a>-->
                 </nav>
             </header>
             <main>
@@ -49,13 +51,13 @@
 
         <div id="projects" class="page">
             <header>
-               
+
                 <h1>
                     Saif Bhuiya
                 </h1>
                 <nav>
                     <a href="#" data-page="about">About Me</a>
-                    <a href="#" data-page="projects">Projects</a>
+                    <a href="#" data-page="projects" class="current">Projects</a>
                     <a href="#" data-page="games">Games</a>
                     <a href="#" data-page="music">Music</a>
                 </nav>
@@ -63,11 +65,11 @@
             <main>
                 <section>
                     <h2>Hello! I am Saif Bhuiya. </h2>
-                    <p>I am a Software Engineer from Bangladesh. <br>I did my Bachelors in Computer Science and Engineering from North South University, Bangladesh. <br>My current CGPA: 3.74.<br> My Projects:</p>
+                    <p>I am a Software Engineer from Bangladesh. <br>I did my Bachelors in Computer Science and Engineering from North South University, Bangladesh. <br>My current CGPA: 3.70.<br> My Projects:</p>
                     <p1>
                         <br> <a href="https://github.com/SaifBhuiya/CSE299">Optical Mark Recognition (OMR) from pictures taken by a phone</a>
                         <br> <a href="https://github.com/SaifBhuiya/Mediapipe">Augmented Reality based Clothing Trial App</a>
-                        <br> <a href="index.html">This Website</a>
+                        <br> <a href="https://saifbhuiya.github.io/My_Website/">This Website</a>
                     </p1>
                 </section>
             </main>
@@ -77,14 +79,14 @@
 
         <div id="games" class="page">
             <header>
-                
+
                 <h1>
                     Dan5626
                 </h1>
                 <nav>
                     <a href="#" data-page="about">About Me</a>
                     <a href="#" data-page="projects">Projects</a>
-                    <a href="#" data-page="games">Games</a>
+                    <a href="#" data-page="games" class="current">Games</a>
                     <a href="#" data-page="music">Music</a>
                 </nav>
 
@@ -124,7 +126,7 @@
                     <a href="#" data-page="about">About Me</a>
                     <a href="#" data-page="projects">Projects</a>
                     <a href="#" data-page="games">Games</a>
-                    <a href="#" data-page="music">Music</a>
+                    <a href="#" data-page="music" class="current">Music</a>
                 </nav>
 
             </header>
@@ -146,17 +148,17 @@
 
                     <div id="originals" class="song-list active">
                         <div class="song">
-                            <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                            <iframe id="Paralyzed" width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
                                     src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/1975141611&amp;color=%23246B67">
                             </iframe>
                         </div>
                         <div class="song">
-                            <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                            <iframe id="White Lights" width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
                                     src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/899785738&amp;color=%23797ca9">
                             </iframe>
                         </div>
                         <div class="song">
-                            <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                            <iframe id="Kill Monger" width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
                                     src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/908545624&amp;color=%23a4747c">
                             </iframe>
                         </div>
@@ -165,17 +167,17 @@
 
                     <div id="remixes" class="song-list">
                         <div class="song">
-                            <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                            <iframe id="Lose Your Mind" width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
                                     src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/1702643478&amp;color=%232d3053">
                             </iframe>
                         </div>
                         <div class="song">
-                            <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                            <iframe id="Blindspot" width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
                                     src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/999732685&amp;color=%23618185">
                             </iframe>
                         </div>
                         <div class="song">
-                            <iframe width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
+                            <iframe id="Nobody" width="100%" height="166" style="transform: scale(.80);" scrolling="no" frameborder="yes" allow="autoplay"
                                     src="https://w.soundcloud.com/player?url=https%3A//api.soundcloud.com/tracks/1184367820&amp;color=%23285c7c">
                             </iframe>
                         </div>
@@ -187,27 +189,165 @@
                 </section>
             </main>
 
+
+        </div>
+
+
+        <div class="audio_player">
+            <button class="play" id="PlaySongs">
+                <svg width="26" height="26" viewBox="-2 -2 24 24" fill="white" stroke="white" stroke-width="2">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+            </button>
+            <!--<div id="waveform">-->
+            <!-- the waveform will be rendered here -->
+            <!--</div>-->
+
+
+            <div class="volumeicon">
+                <div class=" volume">
+                    <div id="number">50</div>
+                    <input type="range" min="0" max="100" value="50" id="slider" class="volslider">
+                </div>
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                </svg>
+
             </div>
 
-            <footer>
-                <p>© 2024 Saif Bhuiya. All rights reserved.</p>
-                <p>
-                    <a href="index.html">About</a> |
-                    <a href="contact.html">Contact</a> |
-                    <a href="privacy.html">Privacy Policy</a>
-                </p>
-                <p>
-                    Follow me on:
 
-                    <a href="https://github.com/SaifBhuiya" target="_blank">GitHub</a> |
-                    <a href="https://itch.io/profile/dan5626" target="_blank">Itch.io</a> |
-                    <a href="https://soundcloud.com/user-11502799-336281830" target="_blank">Soundcloud</a>
-                </p>
-            </footer>
+            <!--Timeline-->
+            <div class="timeline">
+                <div class="timeline-container">
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 107.25%;">
+                            <div class="progress-handle"></div>
+                        </div>
+                    </div>
+                    <span class="time" id="elapsed">0:00 /</span>
+                    <span class="time" id="duration">0:00</span>
+                </div>
+            </div>
+
+
+
+
 
 
         </div>
-        <script src="script_global.js"></script>
+        <!--<div class="audio-player">
+            <div class="player-container">-->
+        <!-- Left Controls -->
+        <!--<div class="controls">
+            <button class="control-btn" id="prevBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 20L9 12l10-8v16z"></path>
+                    <line x1="5" y1="19" x2="5" y2="5"></line>
+                </svg>
+            </button>
 
+            <button class="play-btn" id="playBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+            </button>
+
+            <button class="control-btn" id="nextBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 4l10 8-10 8V4z"></path>
+                    <line x1="19" y1="5" x2="19" y2="19"></line>
+                </svg>
+            </button>
+
+            <button class="control-btn" id="shuffleBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 3h5v5"></path>
+                    <path d="M4 20L21 3"></path>
+                    <path d="M21 16v5h-5"></path>
+                    <path d="M15 15l6 6"></path>
+                    <path d="M4 4l5 5"></path>
+                </svg>
+            </button>
+
+            <button class="control-btn" id="repeatBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 2l4 4-4 4"></path>
+                    <path d="M3 11v-1a4 4 0 0 1 4-4h14"></path>
+                    <path d="M7 22l-4-4 4-4"></path>
+                    <path d="M21 13v1a4 4 0 0 1-4 4H3"></path>
+                </svg>
+            </button>
+        </div>-->
+        <!-- Timeline -->
+        <!--<div class="timeline">
+            <div class="timeline-container">
+                <span class="time">2:41</span>
+                <div class="progress-bar">
+                    <div class="progress3">
+                        <div class="progress-handle"></div>
+                    </div>
+                </div>
+                <span class="time">2:59</span>
+            </div>
+        </div>-->
+        <!-- Right Controls -->
+        <!--<div class="track-info">
+                    <div class="volume-control">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                        </svg>
+                        <div class="volume-bar">
+                            <div class="volume-level"></div>
+                        </div>
+                    </div>
+
+                    <img src="/api/placeholder/32/32" alt="Track artwork" class="track-img">
+                    <div class="track-text">
+                        <span class="track-title">Track Title</span>
+                        <span class="track-artist">Artist Name</span>
+                    </div>
+
+                    <button class="control-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="8" y1="6" x2="21" y2="6"></line>
+                            <line x1="8" y1="12" x2="21" y2="12"></line>
+                            <line x1="8" y1="18" x2="21" y2="18"></line>
+                            <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                            <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                            <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>-->
+
+
+        <footer>
+            <p>© 2024 Saif Bhuiya. All rights reserved.</p>
+            <p>
+                <a href="index.html">About</a> |
+                <a href="index.html">Contact</a> |
+                <a href="index.html">Privacy Policy</a>
+            </p>
+            <p>
+                Follow me on:
+
+                <a href="https://github.com/SaifBhuiya" target="_blank">GitHub</a> |
+                <a href="https://itch.io/profile/dan5626" target="_blank">Itch.io</a> |
+                <a href="https://soundcloud.com/user-11502799-336281830" target="_blank">Soundcloud</a>
+            </p>
+        </footer>
+
+
+    </div>
+    <script src="script_global.js"></script>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+    <script src="miniplayer.js"></script>
+    <!--<script src="https://unpkg.com/wavesurfer.js@7"></script>-->
 </body>
 </html>

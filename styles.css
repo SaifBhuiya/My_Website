@@ -34,12 +34,15 @@ header {
         border-radius: 20px;
     }
 
-        header nav a:hover {
+        header nav a:hover{
             /*text-decoration: underline;*/
             background-color: rgba(255, 112, 112, .5);
             color: white;
         }
-
+        header nav a.current {
+            background-color: rgba(255, 112, 112, .9);
+            color: white;
+        }
 body {
     min-height: 100vh;
     background: linear-gradient(to bottom, rgba(255, 112, 112, 0.4), rgba(150, 95, 138, 0.4), rgba(74, 198, 183, 0.3) );

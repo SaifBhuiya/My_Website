@@ -12,7 +12,7 @@
 }
 
 header {
-    background-color: #7D89E3;
+    background-color: /*#7D89E3*/;
     height: 5vh;
     width: 100%;
     color: #342131;
@@ -29,11 +29,18 @@ header {
         color: #342131;
         text-decoration: none;
         font-size: 15px;
-        padding: 30px;
+        padding: 15px 30px;
+        border-radius: 20px;
     }
 
         header nav a:hover {
-            text-decoration: underline;
+            /*text-decoration: underline;*/
+            background-color: rgba(92, 102, 245, 0.5);
+            color: white;
+        }
+        header nav a.current {
+            background-color: rgba(92, 102, 245, .9);
+            color: white;
         }
 
 body {

@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (dynamicStylesheet) {
             dynamicStylesheet.href = stylesheets[pageId] || 'styles.css';
             console.log('Updated stylesheet to:', stylesheets[pageId]);
+            
         }
     }
 

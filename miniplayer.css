@@ -1,0 +1,310 @@
+.audio_player {
+    /*    display: none;
+*/
+    display: flex;
+    position: sticky;
+    margin-top: auto;
+    margin-bottom: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    text-align: center;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.play {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: salmon;
+    cursor: pointer;
+    position:static;
+    
+}
+
+    .play:hover {
+        background: #e5e5e5;
+    }
+
+.volume {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-48px,-82px) rotate(-90deg);
+
+}
+
+
+
+input[type="range"] {
+    width: 12vh;
+    height: 15px;
+    position: relative;
+  
+    -webkit-appearance: none;
+/*    border-radius: 2px;
+*/
+}
+    /* Style for the thumb */
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        background: white;
+        border: 2.5px solid lightsalmon;
+        border-radius: 20%;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Firefox-specific thumb styling */
+    input[type="range"]::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        background: white;
+        border: 2.5px solid lightsalmon;
+        border-radius: 25%;
+        cursor: pointer;
+    }
+
+
+    /* Hide default progress fill for Firefox */
+    input[type="range"]::-moz-range-progress {
+        background-color: lightsalmon;
+        border:2.5px solid white;
+        justify-items:center;
+        height:11px;
+
+     
+    }
+
+#number {
+    background-color: #F7BFB4;
+    height: 26px;
+    width: 32px;
+    align-content: center;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 17px;
+    border-radius: 3px;
+    letter-spacing: 1.2px;
+    transform: rotate(90deg);
+}
+  
+    .volumeicon{
+        position:relative;
+        display:grid;
+        align-content:center;
+        left:24px;
+        justify-content:center;
+   
+
+    }
+
+.timeline {
+    /* flex: 1;
+    */
+    position: static;
+    height: 10px;
+    width: 60%;
+    margin: 10px 50px;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    border:3px solid grey;
+}
+
+.timeline-container {
+    display: flex;
+    position:relative;
+    align-content: center;
+    justify-content:center;
+    /*gap: 8px;*/
+}
+
+.progress-bar {
+    flex: 1;
+    height: 5.5px;
+    background: white;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.progress {
+    /*width: 25%;*/
+    height: 100%;
+    background-color: salmon;
+    position: relative;
+}
+
+.progress-handle {
+    width: 18px;
+    height: 18px;
+    background: lightsalmon;
+    border: 3px solid grey; 
+    border-radius: 50%;
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.time {
+    display:block;
+    font-size: 14px;
+    position: relative;
+    
+    color: grey;
+    left: 78px;
+    top: -5px;
+    /*    min-width: 45px;
+*/
+}
+    
+
+/*.player-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.play-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: #f5f5f5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .play-btn:hover {
+        background: #e5e5e5;
+    }
+
+.control-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+    .control-btn:hover {
+        opacity: 1;
+    }
+
+.timeline {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.timeline-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 4px;
+    background: #e5e5e5;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.progress {
+    width: 90%;
+    height: 100%;
+    background: #0066cc;
+    border-radius: 2px;
+    position: relative;
+}
+
+.progress-handle {
+    width: 12px;
+    height: 12px;
+    background: #0066cc;
+    border-radius: 50%;
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.time {
+    font-size: 12px;
+    color: #666;
+    min-width: 45px;
+}
+
+.track-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 16px;
+}
+
+.volume-bar {
+    width: 100px;
+    height: 4px;
+    background: #e5e5e5;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.volume-level {
+    width: 75%;
+    height: 100%;
+    background: #666;
+    border-radius: 2px;
+}
+
+.track-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.track-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.track-title {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.track-artist {
+    font-size: 12px;
+    color: #666;
+}
+*/
