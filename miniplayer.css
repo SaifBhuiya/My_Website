@@ -13,17 +13,16 @@
     padding: 10px 0;
     justify-content: center;
 }
-
-.play {
+.play-icon, .pause-icon {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     border: none;
     background: salmon;
     cursor: pointer;
-    position:static;
-    
+    position: static;
 }
+
 
     .play:hover {
         background: #e5e5e5;
@@ -35,7 +34,13 @@
     align-items: center;
     justify-content: center;
     transform: translate(-48px,-82px) rotate(-90deg);
-
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.volumeicon:hover .volume {
+    opacity: 1;
+    visibility: visible;
 }
 
 
