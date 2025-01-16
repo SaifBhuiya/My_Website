@@ -10,7 +10,10 @@ document.querySelectorAll(".song iframe").forEach(iframe => {
     widget.bind(SC.Widget.Events.PLAY, () => {
         currentSongId = iframe.id;
         isPlaying = true;
+        
+        document.querySelector('.audio_player').style.display = "flex";
         updatePlayPauseButton();
+
 
         widget.getDuration((duration) => {
             totaldur = duration;
@@ -47,7 +50,7 @@ document.querySelectorAll(".song iframe").forEach(iframe => {
             }
 
             const progressBar = document.getElementById('elapsed');
-            progressBar.innerHTML = minutes + ":" + remainingSeconds + " /";
+            progressBar.innerHTML = minutes + ":" + remainingSeconds + " / ";
         });
     });
 });

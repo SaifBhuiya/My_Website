@@ -1,7 +1,7 @@
 .audio_player {
     /*    display: none;
 */
-    display: flex;
+   /* display: flex;*/
     position: sticky;
     margin-top: auto;
     margin-bottom: auto;
