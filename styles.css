@@ -52,6 +52,15 @@ body {
     body h3{
         font-size: 37px;
     }
+    body h4{
+        font-size : 18px;
+        font-weight:normal;
+    }
+    body h5 {
+        font-size: 28px;
+        font-weight: bold;
+        color: indianred;
+    }
 
    
 .animated-text {
