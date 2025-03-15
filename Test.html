@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Saif's Portfolio - About Me
+    </title>
+    <link rel="stylesheet" href="styles_global.css">
+    <link rel="stylesheet" href="miniplayer.css">
+    <!-- Dynamic stylesheet - will be changed based on page -->
+    <link id="dynamic-stylesheet" rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <h1>Live Webcam</h1>
+    <video id="video" autoplay></video>
+    <button onclick="captureFrame()">Capture</button>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <img id="capturedImage" alt="Captured Frame" />
+
+    <script>
+        async function startCamera() {
+            try {
+                const video = document.getElementById('video');
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                video.srcObject = stream;
+            } catch (error) {
+                console.error("Error accessing webcam:", error);
+            }
+        }
+
+        function captureFrame() {
+            const video = document.getElementById('video');
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+            document.getElementById('capturedImage').src = canvas.toDataURL('image/png');
+        }
+
+        startCamera();
+    </script>
+
+
+    <footer>
+        <p>© 2024 Saif Bhuiya. All rights reserved.</p>
+        <p>
+            <a href="index.html">About</a> |
+            <a href="index.html">Contact</a> |
+            <a href="index.html">Privacy Policy</a>
+        </p>
+        <p>
+            Follow me on:
+
+            <a href="https://github.com/SaifBhuiya" target="_blank">GitHub</a> |
+            <a href="https://itch.io/profile/dan5626" target="_blank">Itch.io</a> |
+            <a href="https://soundcloud.com/user-11502799-336281830" target="_blank">Soundcloud</a>
+        </p>
+    </footer>
+
+
+    </div>
+    <script src="script_global.js"></script>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+    <script src="miniplayer.js"></script>
+    <!--<script src="https://unpkg.com/wavesurfer.js@7"></script>-->
+</body>
+</html>
