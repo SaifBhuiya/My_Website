@@ -12,6 +12,7 @@
 
 header {
     background-color: /*#79CDA9*/; /*header BG color*/
+    background: linear-gradient(to right, rgba(64, 165, 120, .5), rgba(64, 165, 120, .1));
     height: 5vh;
     width: 100%;
     color: #213126; /*header Font colro*/

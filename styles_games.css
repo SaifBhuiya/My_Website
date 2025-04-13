@@ -13,6 +13,7 @@
 
 header {
     background-color: /*#7D89E3*/;
+    background: linear-gradient(to right, rgba(92, 102, 245, .5), rgba(92, 102, 245, .1));
     height: 5vh;
     width: 100%;
     color: #342131;

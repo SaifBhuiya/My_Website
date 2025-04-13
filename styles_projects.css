@@ -13,6 +13,7 @@
 
 header {
     background-color: /*#A67DE3*/; /*header BG color*/
+    background: linear-gradient(to right, rgba(137, 103, 179, 0.5), rgba(137, 103, 179, 0.1));
     height: 5vh;
     width: 100%;
     color: #302131; /*header Font colro*/
@@ -70,7 +71,7 @@ main {
 
 footer {
     width: 100%;
-    background-color: #FDC4C4;
+    background-color: rgba(137, 103, 179, 0.1);
     color: #302131;
     text-align: center;
     padding: 10px;
