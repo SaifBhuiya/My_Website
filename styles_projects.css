@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .page-wrapper {
@@ -13,7 +13,7 @@
 
 header {
     background-color: /*#A67DE3*/; /*header BG color*/
-    background: linear-gradient(to right, rgba(137, 103, 179, 0.5), rgba(137, 103, 179, 0.1));
+    background: linear-gradient(to right, rgba(137, 103, 179, 1), rgba(137, 103, 179, 0.1));
     height: 5vh;
     width: 100%;
     color: #302131; /*header Font colro*/
@@ -62,10 +62,10 @@ body {
 
 main {
     color: #302131; /* body font color */
-    font-size: 30px;
+    font-size: 18px;
     margin: 100px;
-    margin-right: 10vw;
-    margin-left: 10vw;
+    margin-right: 20vw;
+    margin-left: 20vw;
     flex: 1; /* Ensures main takes up remaining space */
 }
 

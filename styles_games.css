@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .page-wrapper {
@@ -13,7 +13,7 @@
 
 header {
     background-color: /*#7D89E3*/;
-    background: linear-gradient(to right, rgba(92, 102, 245, .5), rgba(92, 102, 245, .1));
+    background: linear-gradient(to right, rgba(92, 102, 245, 1), rgba(92, 102, 245, .1));
     height: 5vh;
     width: 100%;
     color: #342131;
@@ -46,9 +46,9 @@ header {
 
 body {
     height: auto; /* Removed fixed height to allow natural content growth */
-    background: linear-gradient( to bottom, rgba(92, 102, 245, 0.5),
-    rgba(100, 198, 247, 0.4),
-    rgba(250, 179,255, 0.3) );
+    background: linear-gradient( to bottom, rgba(92, 102, 245, 0.25),
+    rgba(100, 198, 247, 0.25),
+    rgba(250, 179,255, 0.25) );
 }
 
     body h2 {
@@ -57,10 +57,11 @@ body {
 
 main {
     color: #342131;
-    font-size: 30px;
+    font-size: 18px;
     margin: 100px;
     margin-right: 10vw;
     margin-left: 10vw;
+    text-align: center;
     flex: 1; /* Makes the main content area grow to fill available space */
 }
 

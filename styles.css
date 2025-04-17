@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Create a wrapper to ensure footer stays at bottom */
@@ -16,7 +16,7 @@ header {
     /*background-color:*/ /*#F9B9B9*/ /*;*/
 /*    background: rgba(255, 112, 112, .5);
 */    
-    background: linear-gradient(to right, rgba(255, 112, 112, 0.5), rgba(255, 112, 112, 0.1));
+    background: linear-gradient(to right, rgba(255, 112, 112, 1), rgba(255, 112, 112, 0.1));
     height: 5vh;
     width: 100%;
     color: #312B21;
@@ -48,7 +48,7 @@ header {
         }
 body {
     min-height: 100vh;
-    background: linear-gradient(to bottom, rgba(255, 112, 112, 0.25), rgba(255, 112, 112, 0.5));
+    background: linear-gradient(to bottom, rgba(255, 112, 112, 0.3), rgba(255, 112, 112, 0.3));
     /*background: linear-gradient(to bottom, rgba(255, 112, 112, 0.4), rgba(150, 95, 138, 0.4), rgba(74, 198, 183, 0.3) );*/
 }
 
@@ -133,6 +133,19 @@ main {
     margin-right: 20vw;
     margin-left: 20vw;
     flex: 1; /* This makes main content take up remaining space */
+}
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    /*    text-align:center;
+*/
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
 }
 
 footer {
