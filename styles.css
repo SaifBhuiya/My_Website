@@ -56,20 +56,64 @@ body {
     body h3{
         font-size: 37px;
     }
-    body h4{
-        font-size : 18px;
-        font-weight:normal;
+    body h4 {
+        margin-top: 10px;
+        margin-left: 40px;
+        font-size: 18px;
+        font-weight: normal;
     }
     body h5 {
         font-size: 28px;
         font-weight: bold;
         color: indianred;
     }
+    body h6 {
+        font-size: 24px;
+        font-weight: bold;
+    }
 
    
+main {
+    color: #312B21;
+    font-size: 30px;
+    margin: 100px;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    flex: 1; /* This makes main content take up remaining space */
+}
+section {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.infotable {
+    width: 60%;
+    border: none;
+    margin-left: 40px;
+}
+
+    .infotable th, .infotable td {
+        text-align: left;
+        padding: 0px 4px;
+        border: none;
+    }
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table th,table td {
+    /*    text-align:center;
+*/
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
 .animated-text {
     font-size: 32px;
-
 }
 
     .animated-text span {
@@ -96,14 +140,12 @@ body {
         }
 
 
-
-
-
 @keyframes words {
     0%, 20% {
         content: "Software Engineer";
         color: rgba(255, 112, 112, 1);
     }
+
     21%, 40% {
         content: "Game Developer";
         color: rgba(255, 112, 112, 1);
@@ -125,29 +167,6 @@ body {
     }
 }
 
-
-main {
-    color: #312B21;
-    font-size: 30px;
-    margin: 100px;
-    margin-right: 20vw;
-    margin-left: 20vw;
-    flex: 1; /* This makes main content take up remaining space */
-}
-table {
-    width: 100%;
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    /*    text-align:center;
-*/
-    text-align: left;
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 10px;
-}
-
 footer {
     /* Remove position: fixed */
     width: 100%;
@@ -157,3 +176,40 @@ footer {
     padding: 10px;
     margin-top: auto; /* Pushes footer to bottom */
 }
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between the cards */
+}
+.card {
+    width: 150px;
+    height: 150px;
+    background: rgba(155, 102, 112, .2);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .card img {
+        margin-top: 10px;
+        width: 100px;
+    }
+
+.card-content {
+    margin-bottom: 10px; 
+}
+
+    .card-content h2 {
+        font-size: 20px;
+       
+    }
+
+
