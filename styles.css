@@ -29,6 +29,7 @@ header {
     position: relative;
 }
 
+
     header nav a {
         color: #312B21;
         text-decoration: none;
@@ -52,13 +53,14 @@ body {
     /*background: linear-gradient(to bottom, rgba(255, 112, 112, 0.4), rgba(150, 95, 138, 0.4), rgba(74, 198, 183, 0.3) );*/
 }
 
-   
-    body h3{
+
+    body h3 {
+        
         font-size: 37px;
     }
     body h4 {
         margin-top: 10px;
-        margin-left: 40px;
+        margin-left: 190px;
         font-size: 18px;
         font-weight: normal;
     }
@@ -71,11 +73,24 @@ body {
         font-size: 24px;
         font-weight: bold;
     }
+.profile-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    height: auto;
+    border-radius: 100px;
+}
 
-   
+.intro {
+    text-align: center;
+}
+
+
+
 main {
     color: #312B21;
-    font-size: 30px;
+    font-size: 28px;
     margin: 100px;
     margin-right: 20vw;
     margin-left: 20vw;
@@ -87,38 +102,53 @@ section {
 }
 
 .infotable {
-    width: 60%;
+    width: 60%; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
     border: none;
-    margin-left: 40px;
 }
 
-    .infotable th, .infotable td {
+   .infotable tr, .infotable td {
         text-align: left;
-        padding: 0px 4px;
+        padding:0px 4px;
+        margin:15px;
         border: none;
     }
 
-table {
-    width: 100%;
-    border: 1px solid black;
-    border-collapse: collapse;
+.skills {
+    padding: 5px;
+    width:100%;
+    /*border: 1px solid;*/
 }
-table th,table td {
+
+.skill_name {
+    padding-left: 25px;
+}
+
+
+.experience {
+    width: 100%;
+}
+.experience th,.experience td {
     /*    text-align:center;
 */
     text-align: left;
-    border: 1px solid black;
-    border-collapse: collapse;
     padding: 10px;
+    padding-left:20px;
+    padding-right:15px;
+}
+.experience th{
+    font-style:italic;
 }
 
 .animated-text {
-    font-size: 32px;
+    font-size: 28px;
+
 }
 
     .animated-text span {
         position: relative;
-        font-size: 35px;
+        font-size: 28px;
         font-weight: bold;
         /*text-decoration: underline;*/
         text-decoration-thickness: 3px;
@@ -180,16 +210,16 @@ footer {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Adds space between the cards */
+    /*gap: 10px;*/ /* Adds space between the cards */
 }
 .card {
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
     background: rgba(155, 102, 112, .2);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin: 20px;
+    margin: 5px;
     text-align: center;
 
     display: flex;
@@ -199,17 +229,17 @@ footer {
 }
 
     .card img {
-        margin-top: 10px;
-        width: 100px;
+        margin-top: 5px;
+        width: 40px;
     }
 
 .card-content {
-    margin-bottom: 10px; 
+    margin-bottom: 5px; 
 }
 
     .card-content h2 {
-        font-size: 20px;
-       
+        font-size: 12px;
+        font-weight:600;
     }
 
 
